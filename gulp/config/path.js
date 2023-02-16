@@ -17,7 +17,7 @@ module.exports = {
   },
 
   js: {
-    src: pathDev + '/*.js',
+    src: pathDev + '/**/*.js',
     watch: pathDev + '/**/*.js',
     dest: pathApp + '/js',
   },

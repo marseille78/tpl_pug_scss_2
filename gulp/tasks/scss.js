@@ -11,10 +11,10 @@ const scss = () => {
     .pipe($.gp.autoprefixer())
     .pipe($.gp.groupCssMediaQueries())
     .pipe($.gulp.dest($.path.scss.dest, { sourcemaps: true }))
-    .pipe($.gp.shorthand())
-    .pipe($.gp.csso())
-    .pipe($.gp.rename({ suffix: '.min' }))
-    .pipe($.gulp.dest($.path.scss.dest))
+    // .pipe($.gp.shorthand())
+    // .pipe($.gp.csso())
+    // .pipe($.gp.rename({ suffix: '.min' }))
+    // .pipe($.gulp.dest($.path.scss.dest))
     .pipe($.browserSync.stream());
 };
 

@@ -9,9 +9,9 @@ const js = () => {
     .pipe($.gp.concat('main.js'))
     .pipe($.gp.babel())
     .pipe($.gulp.dest($.path.js.dest, { sourcemaps: true }))
-    .pipe($.gp.uglify())
-    .pipe($.gp.rename({ suffix: '.min' }))
-    .pipe($.gulp.dest($.path.js.dest))
+    // .pipe($.gp.uglify())
+    // .pipe($.gp.rename({ suffix: '.min' }))
+    // .pipe($.gulp.dest($.path.js.dest))
     .pipe($.browserSync.stream());
 };
 
